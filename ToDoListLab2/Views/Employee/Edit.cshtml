@@ -1,0 +1,24 @@
+﻿@model Employee
+
+
+{
+<form>
+    <div id="Form">
+        @Html.LabelFor(m => m.Name)
+        @Html.TextBoxFor(m => m.Name)
+        @Html.ValidationMessageFor(m => m.Name, "", new { @class = "text-danger" })
+
+    </div>
+    <div id="Form">
+        @Html.LabelFor(m => m.HoursAvailable)
+        @Html.TextBoxFor(m => m.HoursAvailable)
+        @Html.ValidationMessageFor(m => m.HoursAvailable, "", new { @class = "text-danger" })
+    </div>
+    <div id="Form">
+        @Html.LabelFor(m => m.Title)
+        @Html.TextBoxFor(m => m.Title)
+        @Html.ValidationMessageFor(m => m.Title, "", new { @class = "text-danger" })
+    </div>
+    <input type="submit" , value="Submit" />
+</form>
+}
